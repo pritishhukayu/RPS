@@ -9,6 +9,7 @@ This is a simple Rock Paper Scissors web app where the computer plays against it
 - Displays a randomly generated Rock, Paper, or Scissors symbol for both the left and right sides.
 - Highlights the winner in green and draws in yellow.
 - Repeats the game every 100ms for 4 seconds and then shows the final result.
+- Checking ArgoCD.
 
 ## How to use
 
