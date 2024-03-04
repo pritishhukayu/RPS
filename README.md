@@ -13,7 +13,7 @@ This is a simple Rock Paper Scissors web app where the computer plays against it
 
 ## How to use
 
-1. Clone this repository or download the files. Done and Dusted :)
+1. Clone this repository or download the files. Done and Dusted
 2. Open the `index.html` file in your browser.
 3. Click the "Start" button to start the game.
 4. The game will play itself and show the result after 4 seconds.
