@@ -7,6 +7,7 @@ pipeline {
     environment {
         DOCKER_IMAGE_NAME = 'rps-web-app'
         DOCKER_IMAGE_TAG = 'latest'
+	GIT_SSL_NO_VERIFY = 'true'
     }
     
     stages {
