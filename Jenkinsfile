@@ -1,4 +1,4 @@
-def argocdServer = "https://172.16.9.183:30013"
+def argocdServer = "172.16.9.183:30013"
 def argocdAppName = params.argocd_appName
 def argocdJenkinsDeployRole = params.argocd_jenkinsDeployRole
 pipeline {
@@ -35,9 +35,9 @@ pipeline {
 					script {
 							withCredentials([string(credentialsId: "${argocdJenkinsDeployRole}", variable: 'ARGOCD_AUTH_TOKEN')]) {
 								sh """
-									ARGOCD_SERVER=${argocdServer} argocd app actions run ${argocdAppName} restart --kind StatefulSet
-									ARGOCD_SERVER=${argocdServer} argocd --grpc-web app sync ${argocdAppName} --force
-									ARGOCD_SERVER=${argocdServer} argocd --grpc-web app wait ${argocdAppName} --timeout 600
+									ARGOCD_SERVER=https://${argocdServer} argocd app actions run ${argocdAppName} restart --kind StatefulSet
+									ARGOCD_SERVER=https://${argocdServer} argocd --grpc-web app sync ${argocdAppName} --force
+									ARGOCD_SERVER=https://${argocdServer} argocd --grpc-web app wait ${argocdAppName} --timeout 600
 								"""
 						}
 					}
