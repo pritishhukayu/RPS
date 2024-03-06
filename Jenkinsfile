@@ -32,7 +32,7 @@ pipeline {
 			steps {
 				retry(count: 2) {
 					script {
-							withCredentials([string(credentialsId: "${argocdJenkinsRole}", variable: 'ARGOCD_AUTH_TOKEN')]) {
+							withCredentials([string(credentialsId: "${argocdJenkinsDeployRole}", variable: 'ARGOCD_AUTH_TOKEN')]) {
 								sh """
 									ARGOCD_SERVER=${argocdServer} argocd app actions run ${argocdAppName} restart --kind StatefulSet
 									ARGOCD_SERVER=${argocdServer} argocd --grpc-web app sync ${argocdAppName} --force
