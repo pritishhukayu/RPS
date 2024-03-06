@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script {
                     // Build the Docker image
-                    sh "docker build -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG ."
+                    //sh "docker build -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG ."
                     // Push the image to a Docker registry if needed
                     // sh "docker push $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG"
                 }
