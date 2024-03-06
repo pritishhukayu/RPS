@@ -1,4 +1,4 @@
-def argocdServer = https://172.16.9.183:30013
+def argocdServer = "https://172.16.9.183:30013"
 def argocdAppName = params.argocd_appName
 def argocdJenkinsDeployRole = params.argocd_jenkinsDeployRole
 pipeline {
