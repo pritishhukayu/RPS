@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_IMAGE_NAME = 'rps-web-app'
         DOCKER_IMAGE_TAG = 'latest'
-         //ArgoCD details
+        // ArgoCD details
         ARGOCD_URL = 'http://172.16.9.183:30013' // Replace with your ArgoCD server URL
         ARGOCD_PROJECT = 'voltas-amc' // Replace with your ArgoCD project name
         ARGOCD_APP_NAME = 'testargoautomate' // Replace with your ArgoCD application name
@@ -17,7 +17,7 @@ pipeline {
             steps {
                 script {
                     // Build the Docker image
-                    //sh "docker build -t ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG} ."
+                    // sh "docker build -t ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG} ."
                     // Optionally push the image to a Docker registry
                     // sh "docker push ${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG}"
                 }
