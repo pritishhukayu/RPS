@@ -4,11 +4,11 @@ pipeline {
     environment {
         DOCKER_IMAGE_NAME = 'rps-web-app'
         DOCKER_IMAGE_TAG = 'latest'
-        # ArgoCD details
+         //ArgoCD details
         ARGOCD_URL = 'http://172.16.9.183:30013' // Replace with your ArgoCD server URL
         ARGOCD_PROJECT = 'voltas-amc' // Replace with your ArgoCD project name
         ARGOCD_APP_NAME = 'testargoautomate' // Replace with your ArgoCD application name
-        # Credentials
+        // Credentials
         ARGOCD_TOKEN = credentials('Argocd-Deploy-Role') // Replace with your ArgoCD token credential ID
     }
 
