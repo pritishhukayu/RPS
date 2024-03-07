@@ -24,7 +24,7 @@ pipeline {
             }
         }
         
-        stage("Refresh k8s container") {
+        stage('Refresh k8s container') {
             steps {
                 retry(count: 2) {
                     script {
