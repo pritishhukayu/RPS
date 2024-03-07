@@ -11,6 +11,12 @@ pipeline {
     }
     
     stages {
+        stage('Configure Git') {
+            steps {
+                // Run git config command to disable SSL verification
+                sh 'git config --global http.sslVerify "false"'
+            }
+        }
         stage('Test') {
             steps {
                 // Your actual test steps here
