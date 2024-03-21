@@ -1,7 +1,7 @@
 # Rock Paper Scissors Web App
 
 - This is a simple Rock Paper Scissors web app where the computer plays against itself. The app is built using HTML, CSS, and JavaScript.
-- Sonarqube Anlaysis added  .
+- Sonarqube Anlaysis added .
 
 ![Rock Paper Scissors Web App Screenshot](screenshot.png)
 
